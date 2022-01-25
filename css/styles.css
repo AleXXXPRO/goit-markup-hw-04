@@ -501,6 +501,7 @@ a {
 .section-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #2f303a;
 }
 .footer-logo {
   display: block;
@@ -510,7 +511,7 @@ a {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   margin-bottom: 20px;
 }
 .addres-fiz {
@@ -521,7 +522,7 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-title-text);
-  background-color: violet;
+  /* background-color: violet; */
 }
 .addres-fiz:hover,
 .addres-fiz:focus {
@@ -536,7 +537,7 @@ a {
   margin-bottom: 9px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  background-color: violet;
+  /* background-color: violet; */
 }
 .footer-mail:hover,
 .footer-mail:focus,
@@ -551,12 +552,46 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  background-color: violet;
+  /* background-color: violet; */
 }
 .footer-all {
   display: flex;
 }
+.footer-join-text {
+  padding-top: 12px;
+  margin-left: 70px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-title-text);
+}
+.footer-join-list {
+  display: flex;
+  margin-left: 70px;
+}
+.footer-join-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.footer-join-link:hover,
+.footer-join-link:focus {
+  background-color: var(--accent-color);
+}
 
+.footer-join-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-join-icon {
+  fill: var(--btn-color);
+}
 /* ----------Страница Portfolio -------------*/
 
 .section-portfolio {
