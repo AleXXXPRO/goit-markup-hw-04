@@ -133,39 +133,41 @@ a {
 }
 .auth-nav {
   outline: 1px solid teal;
-
   display: flex;
   margin-left: auto;
   align-items: center;
-  /* outline: solid 1px tomato; */
+  outline: solid 1px tomato;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .auth-nav-item + .auth-nav-item {
   margin-left: 50px;
 }
-.auth-nav-mail {
-  outline: 1px solid red;
 
+.auth-nav-mail {
+  display: inline-block;
+  outline: 1px solid red;
   color: var(--primary-text-color);
 }
 .auth-nav-mail:hover,
 .auth-nav-mail:focus {
   color: var(--accent-color);
 }
-.auth-nav-mail::before {
+
+/* /* .auth-nav-mail::before {
   outline: 1px solid red;
   display: inline-flex;
   /* align-items: center; */
-  content: '';
+/* content: '';
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  background-image: url(../images/envelope.svg);
-  background-position: center;
-}
+  background-image: url(../images/envelope.svg); */
+/* background-position: center;} */
+
 .auth-nav-tel {
   color: var(--primary-text-color);
   outline: 1px solid red;
@@ -174,7 +176,7 @@ a {
 .auth-nav-tel:focus {
   color: var(--accent-color);
 }
-.auth-nav-tel::before {
+/* .auth-nav-tel::before {
   content: '';
   width: 10px;
   height: 16px;
@@ -182,7 +184,36 @@ a {
   margin-right: 10px;
   background-image: url(../images/smartphone.svg);
   background-position: center;
+} */
+/* .icon-envelope {
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+  /* justify-self: end; 
+} */
+
+.icon-envelope {
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  fill: current Color;
+  /* justify-self: end; */
 }
+.icon-envelope:hover {
+  fill: var(--accent-color);
+}
+
+.icon-smartphone {
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+}
+.icon-smartphone:hover {
+  fill: var(--accent-color);
+}
+
 /* -----------Hero -------------*/
 .section-hero {
   max-width: 1600px;
@@ -267,22 +298,22 @@ a {
 .features-item:last-child {
   margin-right: 0;
 }
-.features-item::before {
+/* .features-item::before {
   display: block;
   content: '';
   height: 120px;
   /* width: 70px; */
-  margin-bottom: 30px;
+/* margin-bottom: 30px;
   border-radius: 4px;
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
-}
-.icon-antena::before {
+} */
+/* .icon-antena::before {
   background-image: url(../images/antena.svg);
-}
-.icon-clock::before {
+} */
+/* .icon-clock::before {
   background-image: url(../images/clock.svg);
 }
 .icon-comp::before {
@@ -290,9 +321,29 @@ a {
 }
 .icon-astro::before {
   background-image: url(..//images/astro.svg);
+} */
+/* .features-title { */
+/* margin-top: 0; */
+/* } */
+.icon-area {
+  display: inline-flex;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  justify-content: center;
+  align-items: center;
 }
-.features-title {
-  /* margin-top: 0; */
+.icon-antena {
+  /* display: flex; */
+  width: 70px;
+  height: 70px;
+
+  /* display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center; */
 }
 .features-after-title {
   /* margin-top: 0; */
