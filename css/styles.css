@@ -324,11 +324,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.icon-antena {
-  /* display: flex; */
-  /* width: 70px;
-  height: 70px; */
-}
+
 .features-after-title {
   /* margin-top: 0; */
   margin-bottom: 10px;
@@ -556,6 +552,9 @@ a {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: violet;
+}
+.footer-all {
+  display: flex;
 }
 
 /* ----------Страница Portfolio -------------*/
