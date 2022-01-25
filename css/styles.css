@@ -141,19 +141,21 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 
 .auth-nav-item + .auth-nav-item {
   margin-left: 50px;
 }
 
-.auth-nav-mail {
-  display: inline-block;
+.auth-nav-link {
+  display: flex;
+  align-items: center;
   outline: 1px solid red;
   color: var(--primary-text-color);
 }
-.auth-nav-mail:hover,
-.auth-nav-mail:focus {
+.auth-nav-link:hover,
+.auth-nav-link:focus {
   color: var(--accent-color);
 }
 
@@ -168,14 +170,6 @@ a {
   background-image: url(../images/envelope.svg); */
 /* background-position: center;} */
 
-.auth-nav-tel {
-  color: var(--primary-text-color);
-  outline: 1px solid red;
-}
-.auth-nav-tel:hover,
-.auth-nav-tel:focus {
-  color: var(--accent-color);
-}
 /* .auth-nav-tel::before {
   content: '';
   width: 10px;
@@ -197,21 +191,16 @@ a {
   display: inline-block;
   width: 16px;
   height: 12px;
-  fill: current Color;
-  /* justify-self: end; */
-}
-.icon-envelope:hover {
-  fill: var(--accent-color);
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .icon-smartphone {
   display: inline-block;
   width: 10px;
   height: 16px;
-  fill: #757575;
-}
-.icon-smartphone:hover {
-  fill: var(--accent-color);
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* -----------Hero -------------*/
@@ -326,7 +315,7 @@ a {
 /* margin-top: 0; */
 /* } */
 .icon-area {
-  display: inline-flex;
+  display: flex;
   width: 270px;
   height: 120px;
   border-radius: 4px;
@@ -337,13 +326,8 @@ a {
 }
 .icon-antena {
   /* display: flex; */
-  width: 70px;
-  height: 70px;
-
-  /* display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-position: center; */
+  /* width: 70px;
+  height: 70px; */
 }
 .features-after-title {
   /* margin-top: 0; */
@@ -433,7 +417,7 @@ a {
 }
 .team-text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -444,6 +428,33 @@ a {
   padding-bottom: 30px;
 }
 
+.team-text-list {
+  display: flex;
+  justify-content: center;
+}
+.team-text-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: cyan;
+  border-radius: 50%;
+}
+.team-text-link:hover,
+.team-text-link:focus {
+  background-color: var(--accent-color);
+}
+.team-text-item + .team-text-item {
+  margin-left: 10px;
+}
+
+/* .team-text-icon {
+  fill: #afb1b8;
+} */
+.team-text-link:hover .team-text-icon {
+  fill: #ffffff;
+}
 /* footer */
 
 .section-footer {
