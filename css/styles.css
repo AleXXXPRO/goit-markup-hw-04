@@ -65,7 +65,7 @@ a {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid teal;
+  /* outline: 2px solid teal; */
   /* flex-wrap: wrap; */
 }
 /* -----------Header -------------*/
@@ -77,7 +77,7 @@ a {
   /* justify-content: space-between; */
 }
 .section-header {
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
   /* display: inline-flex; */
   /* margin-top: 24px;
   margin-bottom: 25px; */
@@ -132,11 +132,11 @@ a {
   color: var(--accent-color);
 }
 .auth-nav {
-  outline: 1px solid teal;
+  /* outline: 1px solid teal; */
   display: flex;
   margin-left: auto;
   align-items: center;
-  outline: solid 1px tomato;
+  /* outline: solid 1px tomato; */
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -151,7 +151,7 @@ a {
 .auth-nav-link {
   display: flex;
   align-items: center;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   color: var(--primary-text-color);
 }
 .auth-nav-link:hover,
@@ -211,7 +211,7 @@ a {
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  outline: solid 1px tomato;
+  /* outline: solid 1px tomato; */
   text-align: center;
 
   background-color: #c4c4c4;
@@ -268,7 +268,7 @@ a {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /* SECTION FEATURES */
@@ -388,6 +388,7 @@ a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
 /* .team-item:not(:last-child) {
   margin-right: 30px;
 } */
@@ -627,6 +628,8 @@ a {
 .buton:focus {
   color: var(--btn-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .gallery-title {
   /* margin-top: 0; */
@@ -663,6 +666,11 @@ a {
   margin-left: 30px;
   margin-top: 30px;
   border: 1px solid #eeeeee;
+}
+.gallery-item:hover,
+.gallery-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* .gallery-item:nth-child(3n) {
   margin-right: 0px;
