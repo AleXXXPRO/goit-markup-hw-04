@@ -497,8 +497,13 @@ a {
   height: 60px;
   fill: #afb1b8;
 }
+
 /* footer */
 
+.footer-all {
+  display: flex;
+  align-items: baseline;
+}
 .section-footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -555,11 +560,9 @@ a {
   color: rgba(255, 255, 255, 0.6);
   /* background-color: violet; */
 }
-.footer-all {
-  display: flex;
-}
+
 .footer-join-text {
-  padding-top: 12px;
+  /* padding-top: 12px; */
   margin-left: 70px;
   margin-bottom: 20px;
   font-weight: bold;
