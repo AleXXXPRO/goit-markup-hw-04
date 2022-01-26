@@ -629,6 +629,7 @@ a {
   color: var(--title-text-color);
   background-color: #f5f4fa;
   border-radius: 4px;
+  border: none;
 }
 .button:hover,
 .buton:focus {
